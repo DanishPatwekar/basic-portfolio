@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -41,14 +42,18 @@
 .icons{
     background-color: rgba(205, 207, 208, 0.893);
     box-shadow: 1px 1px 3px 1px #a4a4a4, -1px -1px 3px 1px  #a4a4a4;
-    margin: 2vh 1vw;
-    width: 6%;
+    margin: 2vh;
     max-width: 80px;
-    padding: 1vh;
-    overflow: hidden;
+    padding: 1.5vh;
     color: black;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-decoration: none;
     
 }
+
 .nav-list{
     display: flex;
     margin-left: 1vw;
@@ -410,8 +415,8 @@ circle.animate.animate-bt{
 
 svg:nth-of-type(4) {
     position: absolute;
-    top: 113.5rem;
-    right: 253px;
+    top: 244.5vh;
+    right: 16.3vw;
 }
 
 circle.animate.animate-react{
@@ -432,8 +437,8 @@ circle.animate.animate-react{
 
 svg:nth-of-type(5) {
     position: absolute;
-    top: 129.8rem;
-    left: 140.5px;
+    top: 279vh;
+    left: 15vw;
 }
 
 circle.animate.animate-java{
@@ -454,8 +459,8 @@ circle.animate.animate-java{
 
 svg:nth-of-type(6) {
     position: absolute;
-    top: 129.8rem;
-    left: 450px;
+    top: 279vh;
+    left: 33.3vw;
 }
 
 
@@ -477,8 +482,8 @@ circle.animate.animate-mysql{
 
 svg:nth-of-type(7) {
     position: absolute;
-    top: 129.8rem;
-    right: 560.5px;
+    top: 279vh;
+    right: 75.3vh;
 }
 
 
@@ -500,8 +505,8 @@ circle.animate.animate-post{
 
 svg:nth-of-type(8) {
     position: absolute;
-    top: 129.8rem;
-    right: 253px;
+    top: 279vh;
+    right: 16.2vw;
 }
 
 
@@ -524,8 +529,8 @@ circle.animate.animate-anjs{
 
 svg:nth-of-type(9) {
     position: absolute;
-    top: 146rem;
-    left: 140.9px;
+    top: 313.5vh;
+    left: 15vw;
 }
 
 
@@ -547,8 +552,8 @@ circle.animate.animate-ps{
 
 svg:nth-of-type(10) {
     position: absolute;
-    top: 146rem;
-    left: 450px;
+    top: 313.5vh;
+    left: 33.3vw;
 }
 
 
@@ -570,8 +575,8 @@ circle.animate.animate-TW{
 
 svg:nth-of-type(11) {
     position: absolute;
-    top: 146rem;
-    right: 561px;
+    top: 313.5vh;
+    right: 34.5vw;
 }
 
 circle.animate.animate-docker{
@@ -592,8 +597,8 @@ circle.animate.animate-docker{
 
 svg:nth-of-type(12) {
     position: absolute;
-    top: 146rem;
-    right: 253.5px;
+    top: 313.4vh;
+    right: 16.3vw;
 }
 
 
@@ -615,8 +620,8 @@ circle.animate.animate-aws{
 
 svg:nth-of-type(13) {
     position: absolute;
-    top: 162.5rem;
-    left: 141px;
+    top: 348vh;
+    left: 15vw;
 }
 
 circle.animate.animate-linux{
@@ -637,8 +642,8 @@ circle.animate.animate-linux{
 
 svg:nth-of-type(14) {
     position: absolute;
-    top: 162.3rem;
-    left: 450px;
+    top: 348vh;
+    left: 33.3vw;
 }
 
 .usinginbox{
@@ -653,9 +658,9 @@ svg:nth-of-type(14) {
 }
 #LN{
     font-size: 24px;
-    margin: 140px 0;
+    margin: 2vh 0;
     position: absolute;
-    top: 2160px;
+    top: 305vh;
     font-style: italic;
 }
 #US{
@@ -685,8 +690,8 @@ svg:nth-of-type(14) {
     position: absolute;
     padding: 10px;
     border-radius: 5px;
-    top: 2885px;
-    left: 80px;
+    top: 406vh;
+    left: 4.5vw;
     color: whitesmoke;
     font-family: "Courier New", monospace;
     font-size: 1.29rem;
@@ -743,11 +748,11 @@ label{
  margin-left: 20px;
 }
 
-.bottombox{
+#bottombox{
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
-    width: 450px;
+    width: 35vw;
 }
 .myinfoforconnect{
     height: 400px;
@@ -769,7 +774,7 @@ label{
     cursor: pointer;
 }
 
-.fotter{
+.footer{
     width: 100%;
     min-height: 50px;
     background: linear-gradient(to right, #ff2faf 0%, #2d24dd61  51%, #d92fff  100%);
@@ -780,8 +785,11 @@ label{
     padding-left: 450px;
 }
 
-
-   
+#bottombox a{
+    width: 150px;
+    padding-right: 50px;
+    overflow:hidden
+}
     
   
   
