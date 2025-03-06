@@ -1,7 +1,3 @@
-import '@fortawesome/fontawesome-free/css/all.min.css';
-
-
-
 document.addEventListener("DOMContentLoaded", () => {
   // Select all elements you want to animate
   const animatedDivs = document.querySelectorAll(".education, svg circle");
