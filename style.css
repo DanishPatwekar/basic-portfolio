@@ -807,16 +807,16 @@ label{
     html, body {
         width: 100%;
         height: 100%;
-        overflow-x: hidden; /* Stops horizontal scrolling */
+        overflow-x: hidden; /* Prevents horizontal scrolling */
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
-    body{
-        
-        padding: 0; /* Reset padding */
-        margin: 0; /* Reset margins */
-        box-sizing: border-box; /* Ensures padding doesn't increase width */
+
+    .container {
+        width: 100vw;  /* Ensures full width of the viewport */
+        max-width: 100%; /* Prevents exceeding screen width */
+        overflow: hidden; /* Hides any extra content */
     }
     .nav-list {
         flex-direction: column; /* Stack items vertically */
