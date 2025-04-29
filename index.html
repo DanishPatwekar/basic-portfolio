@@ -2,17 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="theme-color" content="hwb(309 1% 2%)">
     <title>DP portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./images/logo.webp" type="image/png">
     <script src="style.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">   
 </head>
 <body>
+    
     <div class="container">
         <div class="main">
             <div class="leftside">
@@ -33,13 +32,16 @@
             </div>
             
             <nav role="navigation" aria-label="Main navigation" class="rightside">
-                <ul class="nav-list">
-                    <li><a href="">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#project">Projects</a></li>
-                    <li><a href="#contact_me">Contact me</a></li>
+                <ul class="nav-list" id="manuList">
+                    <a href=""><li>Home</li></a>
+                    <a href="#about"><li>About</li></a>
+                    <a href="#skills"><li>Skills</li></a>
+                    <a href="#project"><li>Projects</li></a>
+                    <a href="#contact_me"><li>Contact me</li></a>
                 </ul>
+                <div class="mobilenav">
+                    <i class="fa-solid fa-bars" onclick="toggleM()"></i>
+                </div>
                 <div class="myphoto">
                     <img src="./images/top.webp" alt="" width="450px" height="550px">
                 </div>    
@@ -417,5 +419,29 @@
             <a href="" style="margin-left: 450px;"><i class="fa-solid fa-angle-up" style="color: white; font-size: 35px;"></i></a>
         </div>
     </div>
+    
+    <script>
+        const mobilenav = document.querySelector('.mobilenav');
+        const navList = document.getElementById('manuList')
+        const navItems = navList.querySelectorAll('a');
+        
+        function toggleM() {
+            if (navList.style.maxHeight && navList.style.maxHeight !== "0px") {
+                navList.style.maxHeight = "0px";
+            } else {
+                navList.style.maxHeight = "500px"; // set a big enough height
+            }
+        }
+
+         navItems.forEach(item => {
+         item.addEventListener('click', () => {
+         navList.style.maxHeight = "0px"; // close the menu
+                            });
+             });
+      
+    </script>
+        
+    
+    
 </body>
 </html>
