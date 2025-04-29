@@ -64,7 +64,7 @@
     top: 4vh;
     background: transparent;
     backdrop-filter: blur(50px);
-    height: 4vh;
+    /* height: 4vh; */
     animation: flowdown 2s ease;
     
 }
@@ -791,15 +791,104 @@ label{
     overflow:hidden
 }
     
-  
+.mobilenav{
+    display: none;
+}
   
 /* Medium screens (tablets) */
 @media (max-width: 1024px) {
-    .nav-list {
-        gap: 2rem; /* Reduce gap */
-        font-size: 1rem; /* Reduce font size */
+    html, body {
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden; /* Prevents horizontal scrolling */
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container {
+        width: 100%;  /* Ensures full width of the viewport */
+        max-width: 100%; /* Prevents exceeding screen width */
+        overflow: hidden; /* Hides any extra content */
     }
     
+
+    .nav-list {
+        width: 100%;
+        position: fixed; 
+        top: 4rem;
+        left: 0;
+        right: 0;
+        height: auto;
+        overflow: hidden;
+        max-height: 0px;
+        transition: max-height 0.5s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: #0c1f5ca7;
+        backdrop-filter: blur(20px);
+        text-align: center;
+        z-index: 1001;  
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 800;
+        
+        gap: 0.5rem;
+        
+    }
+    .nav-list li{
+        padding: 1rem;
+        margin: 0 0.5rem;
+        border: 0.1rem solid;
+        border-image: linear-gradient(to right, #ff2faf, #2d24dd61, #f1ff2fbb) 1;
+        
+    }
+    
+   .nav-list.open {
+               height: 500px; /* enough space for 5 items */
+    }
+    .mobilenav {
+        display: block;
+        color: #fff;
+        font-size: 2rem;
+        margin: 1.2vh 1.2vw;
+        right: 1%;
+        position: fixed; 
+        top: 1rem;
+        cursor: pointer;
+        z-index: 1002;
+    }
+
+    .leftside{
+        width: 70vw;
+        max-height: 100vh;
+        padding: auto;
+        line-height: 4.9vh;
+    }
+    .myphoto{
+        width: 19rem;
+        margin-left: -8rem;
+        margin-top: 10px;
+        padding: 0;
+    }
+    .about{
+        display: flex;
+        width: fit-content;
+        flex-direction: column;
+    }
+
+    .myinfoimage{
+        margin: -5rem 0 0 25rem;
+    }
+    .about p{
+        width: 50vw;
+        margin: -2rem 0 0 0.1rem;
+    }
+    .about #am{
+       position: relative;
+        margin-left: 2rem;
+        margin-top: -25rem;
+        width: fit-content;
+    }
 }
 
 /* Small screens (mobile) */
@@ -814,17 +903,89 @@ label{
     }
 
     .container {
-        width: 100vw;  /* Ensures full width of the viewport */
+        width: 100%;  /* Ensures full width of the viewport */
         max-width: 100%; /* Prevents exceeding screen width */
         overflow: hidden; /* Hides any extra content */
     }
     .nav-list {
-        flex-direction: column; /* Stack items vertically */
-        align-items: center;
-        gap: 1rem; /* Further reduce gap */
-        font-size: 0.9rem; /* Decrease font size */
-        padding: 2vh 2vw;
+        width: 100%;
+        position: fixed; 
+        top: 4rem;
+        left: 0;
+        right: 0;
+        height: auto;
+        overflow: hidden;
+        max-height: 0px;
+        transition: max-height 0.5s ease-in-out;
+        flex-direction: column;
+        background: #0c1f5ca7;
+        backdrop-filter: blur(5px);
+        text-align: center;
+        display: flex;
+        z-index: 1001;  
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 800;
+        
     }
+    .nav-list li{
+        padding: 1rem;
+        margin: 0 0.5rem;
+        border: 0.1rem solid;
+        border-image: linear-gradient(to right, #ff2faf, #2d24dd61, #f1ff2fbb) 1;
+        
+    }
+    
+   .nav-list.open {
+               height: 500px; /* enough space for 5 items */
+    }
+    .mobilenav {
+        display: block;
+        color: #fff;
+        font-size: 2rem;
+        margin: 1.2vh 1.2vw;
+        right: 1%;
+        position: fixed; 
+        top: 1rem;
+        cursor: pointer;
+        z-index: 1002;
+    }
+    .myphoto{
+        display: none;
+    }
+    .leftside{
+        background-color: #0D1224;
+        color: white;
+        width: 100vw;
+        height: 100vh;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        animation: flowright 2s ease;
+        font-size: 20px;
+        padding: 0 5.2vw;
+        line-height: 6vh;
+        
+    }
+
+    .leftside p{
+        font-size: 16px;
+        width: fit-content;
+        line-height: 4vh;
+        margin-top: 2vh;
+    
+    }
+    .logo{
+        margin: 2vh 0 5vh 0;
+        
+    }
+
+
+
+    
+    
+    
+    
+    
+    
+    
 }
 
 /* Extra small screens */
