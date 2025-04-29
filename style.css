@@ -90,7 +90,7 @@
 
 .leftside{
     background-color: #d3d3d3;
-    width: 55%;
+    width: 65%;
     height: 100vh;
     clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
     animation: flowright 2s ease;
@@ -102,10 +102,11 @@
 .leftside p{
     font-size: 18px;
     width: 85%;
+    
 
 }
 .logo{
-    margin: 2vh 0 19vh 0;
+    margin: 2vh 0 10vh 0;
     
 }
 .logo, img{
@@ -220,6 +221,10 @@
     height: 9.2vh;
     display: flex;
     flex-direction: column;
+    opacity: 0; /* Initially hidden */
+    transform: scale(0deg); /* Start position */
+    transition: opacity 3s linear, transform 3s linear;
+
     
 }
 .education h3{
@@ -250,11 +255,7 @@
     border-radius: 1.25rem;
     margin: -1.3vh 0.2vw;    
 }
-.education {
-    opacity: 0; /* Initially hidden */
-    transform: scale(0deg); /* Start position */
-    transition: opacity 3s linear, transform 3s linear; /* Smooth animation */
-}
+
 
 .education.animate {
     opacity: 1; /* Become visible */
@@ -716,7 +717,6 @@ svg:nth-of-type(14) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
 }
 
 .invoice{
@@ -859,36 +859,101 @@ label{
     }
 
     .leftside{
-        width: 70vw;
-        max-height: 100vh;
+        width: 75vw;
+        max-height: 145vh;
         padding: auto;
-        line-height: 4.9vh;
-    }
-    .myphoto{
-        width: 19rem;
+        line-height: 6vh;
         margin-left: -8rem;
-        margin-top: 10px;
+    }
+    
+    
+    .myphoto{
+        width: 14rem;
+        margin-left: -10rem;
+        margin-top: 1px;
         padding: 0;
     }
     .about{
         display: flex;
         width: fit-content;
         flex-direction: column;
+        max-height: 250vh;
     }
 
     .myinfoimage{
-        margin: -5rem 0 0 25rem;
+        margin: 0.1rem 0 0 39rem;
     }
     .about p{
-        width: 50vw;
-        margin: -2rem 0 0 0.1rem;
+        width: 55vw;
+        margin: 0.6rem 0 0 30rem;
+        max-height: 30vh;
+        overflow: auto;
+        border: 1.9px solid;
+        border-image: linear-gradient(to right, #2feeff, #f605c6fe, #2fffa5bb) 1;
+        padding: 10px;
+        
     }
     .about #am{
        position: relative;
-        margin-left: 2rem;
-        margin-top: -25rem;
+        margin-left: 105vw;
+        margin-top: -75vh;
         width: fit-content;
+        background-color: #8f03fab8;
     }
+    .vline{
+       display: none;
+    }
+
+  .education{
+        position: relative;
+        top: -50vh;
+        left: 5%;
+        width: 20vw;
+        height: 9.2vh;
+        display: flex;
+        flex-direction: column;
+        opacity: 0; /* Initially hidden */
+        transform: scale(0deg); /* Start position */
+        transition: opacity 3s linear, transform 3s linear;
+    }
+    .educationinfo{
+        margin: -28vh 0 0 0.5vw;
+        line-height: 5.50rem;
+    }
+
+    .educationinfo span{
+        font-family: Arial, Helvetica, sans-serif;
+        width: 83vw;
+        text-wrap: nowrap;
+        font-size: 1.1rem;
+        padding-left: 1.5vw;
+        gap: 69%;
+        top: 9.4vh;
+    }
+    .educationbar .lineforinfo{
+        width: 6%;
+        height: 69%;
+        background-color: #037ffa;
+        border-radius: 1.25rem;
+        margin: -1.6vh 0.1vw;    
+    }
+    
+    
+    .education.animate {
+        opacity: 1; /* Become visible */
+        transform: scale(100deg); /* Move to original position */
+    }
+    
+    .educationbar .circle{
+        border-radius: 50%;
+        width: 8%;
+        aspect-ratio: 1;
+        color:#a4a4a4;
+    }
+
+
+
+ 
 }
 
 /* Small screens (mobile) */
@@ -962,6 +1027,7 @@ label{
         font-size: 20px;
         padding: 0 5.2vw;
         line-height: 6vh;
+        margin-left: 3vw;
         
     }
 
@@ -976,6 +1042,34 @@ label{
         margin: 2vh 0 5vh 0;
         
     }
+
+    .about{
+        display: flex;
+        width: fit-content;
+        flex-direction: column;
+    }
+
+    .myinfoimage{
+        margin: 1rem 0 0 2.5rem;
+    }
+    .about p{
+        width: 95vw;
+        margin: 2rem 0 0 0.1rem;
+        max-height: 30vh;
+        overflow: auto;
+        border: 1px solid;
+        border-image: linear-gradient(to right, #ff2f86, #f6ae05fe, #05ededee) 1;
+        padding: 10px;
+        margin-right: auto;
+    }
+   
+    .about #am{
+        position: relative;
+        margin-left: 1rem;
+        margin-top: -90vh;
+        width:min-content;
+    }
+
 
 
 
