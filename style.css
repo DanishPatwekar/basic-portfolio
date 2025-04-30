@@ -1034,7 +1034,7 @@ label{
     .leftside p{
         font-size: 16px;
         width: fit-content;
-        line-height: 4vh;
+        line-height: 5.5vh;
         margin-top: 2vh;
     
     }
@@ -1046,16 +1046,17 @@ label{
     .about{
         display: flex;
         width: fit-content;
+        height: 200vh;
         flex-direction: column;
     }
 
     .myinfoimage{
-        margin: 1rem 0 0 2.5rem;
+        margin: 1rem 0 0 1rem;
     }
     .about p{
         width: 95vw;
         margin: 2rem 0 0 0.1rem;
-        max-height: 30vh;
+        max-height: 50vh;
         overflow: auto;
         border: 1px solid;
         border-image: linear-gradient(to right, #ff2f86, #f6ae05fe, #05ededee) 1;
@@ -1065,10 +1066,196 @@ label{
    
     .about #am{
         position: relative;
-        margin-left: 1rem;
-        margin-top: -90vh;
+        margin-left: 1.5rem;
+        margin-top: 10vh;
         width:min-content;
     }
+
+    .education{
+        position: relative;
+        top: -35vh;
+        margin-left: 8vw;
+        width: 20vw;
+        height: 6.2vh;
+        display: flex;
+        flex-direction: column;
+        opacity: 0; /* Initially hidden */
+        transform: scale(0deg); /* Start position */
+        transition: opacity 3s linear, transform 3s linear;
+    }
+    .educationinfo{
+        margin: -28vh 0 0 0.5vw;
+        line-height: 4.50rem;
+    }
+
+    .educationinfo span{
+        font-family: Arial, Helvetica, sans-serif;
+        width: 60vw;
+        text-wrap: nowrap;
+        font-size: 0.85rem;
+        padding-left: 1vw;
+        gap: 50vh;
+        top: 9.4vh;
+        overflow-wrap: break-word;
+    }
+    .educationbar .lineforinfo{
+        width: 6%;
+        height: 52%;
+        background-color: #037ffa;
+        border-radius: 1.25rem;
+        margin: -1.6vh -0.6vw;    
+    }
+    
+    
+    .education.animate {
+        opacity: 1; /* Become visible */
+        transform: scale(100deg); /* Move to original position */
+    }
+    
+    .educationbar .circle{
+        border-radius: 50%;
+        width: 12%;
+        aspect-ratio: 1;
+        color:#a4a4a4;
+        margin-left: -1vw;
+    }
+
+    .skills{
+        display: flex;
+        height: 202vh;
+        width: 100vw;
+        background-color: #d3d3d3;
+        color: #000;
+        gap: 0.4rem;
+        flex-direction: column;
+        padding: 5rem 10rem 5rem 15vw;
+    }
+
+    .skills #myskills{
+        margin: -14vh 0 0 15vw;
+        -webkit-text-stroke: 1px #946868; /* Border thickness and color */
+        font-size: 2.8rem; /* Adjust size as needed */
+        font-weight: bold;
+        border: 0.2rem solid black;
+        width: 40vw;
+        padding: 0.3vh 5vw;
+        
+    }
+
+    .usinginbox{
+        display: grid;
+        grid-template-columns: repeat(3, 1.5fr);
+        grid-template-rows: repeat(auto,1fr);
+        row-gap: 9vh;
+        column-gap: 5vw;
+        margin-left: -5vw;
+    }
+    .ringouter{
+        height: 8rem;
+        width: 8rem;
+        border-radius: 50%;
+        padding: 1.25rem;
+        box-shadow: 0.3rem 0.3rem 0.7rem 0.1rem rgba(0,0,0,0.15),
+                    -0.3rem -0.3rem 0.7rem -0.1rem rgba(255,255,255,0.7);
+    }
+    
+    .ringinner{
+        height: 5.75rem;
+        width: 5.75rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow:  inset 0.25rem 0.25rem 0.5rem -0.125rem  rgba(0,0,0,0.2),
+                     inset -0.25rem -0.25rem 0.5rem -0.125rem  rgba(255,255,255,0.7),
+                     -0.5px -0.5px 0px rgba(255,255,255,1),
+                     0px 0.75rem 0.625rem -0.625rem rgba(0,0,0,0.05);
+    }
+    
+    .ringinner img{
+        height: 4.8rem;
+        width: 4.8rem;
+        position: relative;
+        border-radius: 50%;
+    }
+    
+    
+    circle{
+        opacity: 0;
+    
+    }
+
+    svg:nth-of-type(1) {
+       display: none;
+    }
+    svg:nth-of-type(2) {
+        display: none;
+    }
+
+    svg:nth-of-type(3) {
+        display: none;
+    }
+    svg:nth-of-type(4) {
+        display: none;
+    }
+
+    svg:nth-of-type(5) {
+        display: none;
+    }
+
+    svg:nth-of-type(6) {
+        display: none;
+    }
+
+
+
+
+    #US{
+        margin-left: -2vw;
+        font-size: 24px;
+        font-style: italic;
+    }
+
+    #ps{
+        height: 80px;
+        border-radius: 20px;
+    }
+    #LN{
+        font-size: 24px;
+        margin: -77vh -10vw;
+        position: relative;
+        top: 5vh;
+        font-style: italic;
+    }
+    
+    #TW{
+        height: 40px;
+        border-radius: 0;
+    }
+    #post{
+        height: 70px;
+        border-radius: 0;
+    }
+
+
+
+
+
+    .projects{
+        min-width: 100vw;
+        min-height: 100vh;
+        background-color: #0D1224;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: -10px;
+    }
+    
+
+
+
+    
+
 
 
 
@@ -1087,5 +1274,82 @@ label{
     .nav-list {
         gap: 0.5rem; /* Minimal gap */
         font-size: 0.8rem; /* Smallest font size */
+    }
+
+    .about{
+        display: flex;
+        width: fit-content;
+        height: 200vh;
+        flex-direction: column;
+    }
+
+    .myinfoimage{
+        margin: 1rem 0 0 1rem;
+    }
+    .about p{
+        width: 95vw;
+        margin: 2rem 0 0 0.1rem;
+        max-height: 50vh;
+        overflow: auto;
+        border: 1px solid;
+        border-image: linear-gradient(to right, #ff2f86, #f6ae05fe, #05ededee) 1;
+        padding: 10px;
+        margin-right: auto;
+    }
+   
+    .about #am{
+        position: relative;
+        margin-left: 1.5rem;
+        margin-top: -105vh;
+        width:min-content;
+    }
+
+    .education{
+        position: relative;
+        top: 90vh;
+        margin-left: 8vw;
+        width: 20vw;
+        height: 6.2vh;
+        display: flex;
+        flex-direction: column;
+        opacity: 0; /* Initially hidden */
+        transform: scale(0deg); /* Start position */
+        transition: opacity 3s linear, transform 3s linear;
+    }
+    .educationinfo{
+        margin: -28vh 0 0 0.5vw;
+        line-height: 4.50rem;
+    }
+
+    .educationinfo span{
+        font-family: Arial, Helvetica, sans-serif;
+        width: 60vw;
+        text-wrap: nowrap;
+        font-size: 0.85rem;
+        padding-left: 1vw;
+        gap: 50vh;
+        top: 9.4vh;
+        overflow-wrap: break-word;
+    }
+    .educationbar .lineforinfo{
+        width: 6%;
+        height: 52%;
+        background-color: #037ffa;
+        border-radius: 1.25rem;
+        margin: -1.6vh -0.6vw;    
+    }
+    
+    
+    .education.animate {
+        opacity: 1; /* Become visible */
+        transform: scale(100deg); /* Move to original position */
+    }
+    
+    .educationbar .circle{
+        border-radius: 50%;
+        width: 12%;
+        aspect-ratio: 1;
+        color:#a4a4a4;
+        margin-left: -1vw;
     }
 }
