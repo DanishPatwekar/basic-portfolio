@@ -8,7 +8,56 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./images/logo.webp" type="image/png">
     <script src="style.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">  
+    <style>
+        @media (max-width: 768px) {
+                .manycards {
+                             padding: 1rem;
+                        }   
+                        .projects {
+                            position: relative;
+                            margin-bottom: 4rem;
+                        }
+                        .card {
+                            width: 80vw;
+                            height: 80vh;
+                            position: relative;
+                            padding: 1rem;
+                            margin-top: 2rem;
+                            font-size: 1.2rem;
+                            border-radius: 12px;
+                            border: 2px solid rgba(27, 44, 104, 0.63);
+                            background: linear-gradient(to right, #0d1224, #0a0d37);
+                            font-family: 'Courier New', Courier, monospace;
+                            font-weight: 50;
+                            line-height: 1.5rem;
+                        }
+                        #topline{
+                            width: 100vw !important;
+                            height: 0.4vh !important;
+                            margin-top: -99vh !important;
+                            position: absolute !important;
+                        }
+                        
+                        .pointercircle1{
+                            margin-left: -55vw;
+                            
+                        }
+                        .pointercircle2{
+                            margin-left: -54vw;
+                        }
+                        .pointercircle3{
+                            margin-left: -53vw;
+                        }
+
+                        .myrole{
+                            margin-left: -55vw;
+                        }
+
+                        
+                       
+  }
+</style> 
 </head>
 <body>
     
@@ -297,26 +346,26 @@
             <div class="manycards">
                 <div style="height: 2px; width: 1245px; position: absolute; background: #7c3aed; margin: 85px 0 100px 235px;"></div>
                 <div class="projects">
-                    <div style="height: 2px; width: 780px; position: absolute; background: linear-gradient(to right, transparent, #ec489ac8, #7c3aed,transparent); margin-top: -499px;"></div>
-                    <div style="height: 15px; width: 15px; background: rgba(208, 48, 4, 0.847); border-radius: 50%; position: absolute; margin-top: -440px; left: 400px; "></div>
-                    <div style="height: 15px; width: 15px; background: rgba(212, 212, 6, 0.772); border-radius: 50%; position: absolute; margin-top: -440px; left: 430px; "></div>
-                    <div style="height: 15px; width: 15px; background: rgba(3, 203, 3, 0.774); border-radius: 50%; position: absolute; margin-top: -440px; left: 460px; "></div>
-                    <span style="color: aqua; position: absolute; font-family: 'Courier New', Courier, monospace; font-size: 22px; font-weight: 800; margin-top: -440px;">EduTalk Discussion Forum</span>
+                    <div id="topline" style="height: 2px; width: 780px; position: absolute; background: linear-gradient(to right, transparent, #ec489ac8, #7c3aed,transparent); margin-top: -499px;"></div>
+                    <div class="pointercircle1" style="height: 15px; width: 15px; background: rgba(208, 48, 4, 0.847); border-radius: 50%; position: absolute; margin-top: -440px; left: 400px; "></div>
+                    <div class="pointercircle2" style="height: 15px; width: 15px; background: rgba(212, 212, 6, 0.772); border-radius: 50%; position: absolute; margin-top: -440px; left: 430px; "></div>
+                    <div class="pointercircle3" style="height: 15px; width: 15px; background: rgba(3, 203, 3, 0.774); border-radius: 50%; position: absolute; margin-top: -440px; left: 460px; "></div>
+                    <span id="firstpro" style="color: aqua; position: absolute; font-family: 'Courier New', Courier, monospace; font-size: 22px; font-weight: 800; margin-top: -440px;">EduTalk Discussion Forum</span>
                     <div style="height: 2px; width: 800px; position: absolute; background:#6e37cc88; margin-top: -370px;"></div>
                     <div class="card">
                         <span style="color:aquamarine;">Const</span> <span style="color: whitesmoke;">project</span> <span style="color: rgb(212, 55, 108); font-weight:bolder">=</span> <span style="color: rgb(80, 80, 255); font-weight: bolder;">{</span>
-                        <br><span style="color: white; left: 415px; position: absolute; padding-top: 15px;">my_Role:</span> <span style="color: rgba(255, 255, 0, 0.658);left: 505px; position: absolute; padding-top: 15px;">'Full Stack Developer'<span style="color: whitesmoke;">,</span></span>
-                        <br><span style="color: white; left: 415px; position: absolute; padding-top: 30px;">tools_Technologies:</span> <span style="color: rgba(243, 80, 255, 0.76); font-weight: bolder;left: 620px; position: absolute; padding-top: 30px;">[</span>
-                        <span style="color: rgba(255, 255, 0, 0.658);left: 635px; position: absolute; padding-top: 30px;">'Java','Springboot','MySQL','Hibernet',<br>'HTML5','CSS3','JavaScript',Eclipse','Chrome'</span><br><span style="color: rgba(243, 80, 255, 0.76); font-weight: bolder;left: 1125px; position: absolute; padding-top: 30px;">]<span style="color: whitesmoke;">,</span></span>
-                        <br><span style="color: white; left: 415px; position: absolute; padding-top: 35px;">summary:</span>
-                        <span style="color: rgba(255, 255, 0, 0.658);left: 505px; position: absolute; padding-top: 35px; width: 600px; line-height: 1.8rem;">Together with my team, I built EduTalk Discussion Forum, a web-based application using Java, Spring Boot, HTML, CSS, JavaScript, and MySQL. I developed RESTful APIs for efficient data retrieval, implemented user authentication, and optimized the UI for real-time discussions and a seamless user experience.</span><span style="color: rgb(80, 80, 255); font-weight: bolder; position: absolute; margin-top: 200px; font-weight: 600;font-size: 20px;">}</span>
+                        <br><span class="myrole" style="color: white; left: 415px; position: absolute; padding-top: 15px;">my_Role:</span> <span class="myrole" style="color: rgba(255, 255, 0, 0.658);left: 505px; position: absolute; padding-top: 15px;">'Full Stack Developer'<span style="color: whitesmoke;">,</span></span>
+                        <br><span class="myrole" style="color: white; left: 415px; position: absolute; padding-top: 30px;">tools_Technologies:</span> <span class="myrole" style="color: rgba(243, 80, 255, 0.76); font-weight: bolder;left: 620px; position: absolute; padding-top: 30px;">[</span>
+                        <span class="myrole" style="color: rgba(255, 255, 0, 0.658);left: 635px; position: absolute; padding-top: 30px;">'Java','Springboot','MySQL','Hibernet',<br>'HTML5','CSS3','JavaScript',Eclipse','Chrome'</span><br><span style="color: rgba(243, 80, 255, 0.76); font-weight: bolder;left: 1125px; position: absolute; padding-top: 30px;">]<span style="color: whitesmoke;">,</span></span>
+                        <br><span class="myrole" style="color: white; left: 415px; position: absolute; padding-top: 35px;">summary:</span>
+                        <span class="myrole" style="color: rgba(255, 255, 0, 0.658);left: 505px; position: absolute; padding-top: 35px; width: 600px; line-height: 1.8rem;">Together with my team, I built EduTalk Discussion Forum, a web-based application using Java, Spring Boot, HTML, CSS, JavaScript, and MySQL. I developed RESTful APIs for efficient data retrieval, implemented user authentication, and optimized the UI for real-time discussions and a seamless user experience.</span><span style="color: rgb(80, 80, 255); font-weight: bolder; position: absolute; margin-top: 200px; font-weight: 600;font-size: 20px;">}</span>
                     </div>
                 </div>
                 <div class="projects">
                     <div style="height: 2px; width: 780px; position: absolute; background: linear-gradient(to right, transparent, #ec489ac8, #7c3aed,transparent); margin-top: -499px;"></div>
-                    <div style="height: 15px; width: 15px; background: rgba(208, 48, 4, 0.847); border-radius: 50%; position: absolute; margin-top: -440px; left: 400px; "></div>
-                    <div style="height: 15px; width: 15px; background: rgba(212, 212, 6, 0.772); border-radius: 50%; position: absolute; margin-top: -440px; left: 430px; "></div>
-                    <div style="height: 15px; width: 15px; background: rgba(3, 203, 3, 0.774); border-radius: 50%; position: absolute; margin-top: -440px; left: 460px; "></div>
+                    <div class="pointercircle1" style="height: 15px; width: 15px; background: rgba(208, 48, 4, 0.847); border-radius: 50%; position: absolute; margin-top: -440px; left: 400px; "></div>
+                    <div class="pointercircle2" style="height: 15px; width: 15px; background: rgba(212, 212, 6, 0.772); border-radius: 50%; position: absolute; margin-top: -440px; left: 430px; "></div>
+                    <div class="pointercircle3" style="height: 15px; width: 15px; background: rgba(3, 203, 3, 0.774); border-radius: 50%; position: absolute; margin-top: -440px; left: 460px; "></div>
                     <span style="color: aqua; position: absolute; font-family: 'Courier New', Courier, monospace; font-size: 22px; font-weight: 800; margin-top: -440px;">Invoice Management System</span>
                     <div style="height: 2px; width: 800px; position: absolute; background:#6e37cc88; margin-top: -370px;"></div>
                     <div class="card invoice" >
@@ -330,10 +379,10 @@
                 </div>
                 <div class="projects">
                     <div style="height: 2px; width: 780px; position: absolute; background: linear-gradient(to right, transparent, #ec489ac8, #7c3aed,transparent); margin-top: -499px;"></div>
-                    <div style="height: 15px; width: 15px; background: rgba(208, 48, 4, 0.847); border-radius: 50%; position: absolute; margin-top: -440px; left: 400px; "></div>
-                    <div style="height: 15px; width: 15px; background: rgba(212, 212, 6, 0.772); border-radius: 50%; position: absolute; margin-top: -440px; left: 430px; "></div>
-                    <div style="height: 15px; width: 15px; background: rgba(3, 203, 3, 0.774); border-radius: 50%; position: absolute; margin-top: -440px; left: 460px; "></div>
-                    <span style="color: aqua; position: absolute; font-family: 'Courier New', Courier, monospace; font-size: 22px; font-weight: 800; margin-top: -440px;">E-Commerce Online Shopping Platform</span>
+                    <div class="pointercircle1" style="height: 15px; width: 15px; background: rgba(208, 48, 4, 0.847); border-radius: 50%; position: absolute; margin-top: -440px; left: 400px; "></div>
+                    <div class="pointercircle2" style="height: 15px; width: 15px; background: rgba(212, 212, 6, 0.772); border-radius: 50%; position: absolute; margin-top: -440px; left: 430px; "></div>
+                    <div class="pointercircle3" style="height: 15px; width: 15px; background: rgba(3, 203, 3, 0.774); border-radius: 50%; position: absolute; margin-top: -440px; left: 460px; "></div>
+                    <span style="color: aqua; position: absolute; font-family: 'Courier New', Courier, monospace; font-size: 22px; font-weight: 800; margin-top: -440px;">E-Commerce Online Shopping </span>
                     <div style="height: 2px; width: 800px; position: absolute; background:#6e37cc88; margin-top: -370px;"></div>
                     <div class="card">
                         <span style="color:aquamarine;">Const</span> <span style="color: whitesmoke;">project</span> <span style="color: rgb(212, 55, 108); font-weight:bolder">=</span> <span style="color: rgb(80, 80, 255); font-weight: bolder;">{</span>
@@ -346,9 +395,9 @@
                 </div>
                 <div class="projects">
                     <div style="height: 2px; width: 780px; position: absolute; background: linear-gradient(to right, transparent, #ec489ac8, #7c3aed,transparent); margin-top: -499px;"></div>
-                    <div style="height: 15px; width: 15px; background: rgba(208, 48, 4, 0.847); border-radius: 50%; position: absolute; margin-top: -440px; left: 400px; "></div>
-                    <div style="height: 15px; width: 15px; background: rgba(212, 212, 6, 0.772); border-radius: 50%; position: absolute; margin-top: -440px; left: 430px; "></div>
-                    <div style="height: 15px; width: 15px; background: rgba(3, 203, 3, 0.774); border-radius: 50%; position: absolute; margin-top: -440px; left: 460px; "></div>
+                    <div class="pointercircle1" style="height: 15px; width: 15px; background: rgba(208, 48, 4, 0.847); border-radius: 50%; position: absolute; margin-top: -440px; left: 400px; "></div>
+                    <div class="pointercircle2" style="height: 15px; width: 15px; background: rgba(212, 212, 6, 0.772); border-radius: 50%; position: absolute; margin-top: -440px; left: 430px; "></div>
+                    <div class="pointercircle3" style="height: 15px; width: 15px; background: rgba(3, 203, 3, 0.774); border-radius: 50%; position: absolute; margin-top: -440px; left: 460px; "></div>
                     <span style="color: aqua; position: absolute; font-family: 'Courier New', Courier, monospace; font-size: 22px; font-weight: 800; margin-top: -440px;">Unity Construction & Formulation</span>
                     <div style="height: 2px; width: 800px; position: absolute; background:#6e37cc88; margin-top: -370px;"></div>
                     <div class="card">
@@ -362,9 +411,9 @@
                 </div>
                 <div class="projects invoice">
                     <div style="height: 2px; width: 780px; position: absolute; background: linear-gradient(to right, transparent, #ec489ac8, #7c3aed,transparent); margin-top: -499px;"></div>
-                    <div style="height: 15px; width: 15px; background: rgba(208, 48, 4, 0.847); border-radius: 50%; position: absolute; margin-top: -440px; left: 400px; "></div>
-                    <div style="height: 15px; width: 15px; background: rgba(212, 212, 6, 0.772); border-radius: 50%; position: absolute; margin-top: -440px; left: 430px; "></div>
-                    <div style="height: 15px; width: 15px; background: rgba(3, 203, 3, 0.774); border-radius: 50%; position: absolute; margin-top: -440px; left: 460px; "></div>
+                    <div class="pointercircle1" style="height: 15px; width: 15px; background: rgba(208, 48, 4, 0.847); border-radius: 50%; position: absolute; margin-top: -440px; left: 400px; "></div>
+                    <div class="pointercircle2" style="height: 15px; width: 15px; background: rgba(212, 212, 6, 0.772); border-radius: 50%; position: absolute; margin-top: -440px; left: 430px; "></div>
+                    <div class="pointercircle3" style="height: 15px; width: 15px; background: rgba(3, 203, 3, 0.774); border-radius: 50%; position: absolute; margin-top: -440px; left: 460px; "></div>
                     <span style="color: aqua; position: absolute; font-family: 'Courier New', Courier, monospace; font-size: 22px; font-weight: 800; margin-top: -440px;">Internship Management Platform</span>
                     <div style="height: 2px; width: 800px; position: absolute; background:#6e37cc88; margin-top: -370px;"></div>
                     <div class="card">

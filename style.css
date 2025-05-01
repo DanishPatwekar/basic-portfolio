@@ -1236,11 +1236,6 @@ label{
         height: 70px;
         border-radius: 0;
     }
-
-
-
-
-
     .projects{
         min-width: 100vw;
         min-height: 100vh;
@@ -1250,6 +1245,22 @@ label{
         justify-content: center;
         margin-bottom: -10px;
     }
+    
+    #mypro{
+        position: absolute;
+        padding: 10px;
+        border-radius: 5px;
+        top: 406vh;
+        left: 4.5vw;
+        color: whitesmoke;
+        font-family: "Courier New", monospace;
+        font-size: 1.29rem;
+        line-height: 1.70rem;
+        background-color: #1a1443;
+    }
+    
+
+
     
 
 
