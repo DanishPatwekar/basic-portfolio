@@ -13,17 +13,20 @@
         @media (max-width: 768px) {
                 .manycards {
                              padding: 1rem;
-                        }   
-                        .projects {
+                             display: flex;
+                             flex-direction: column;
+                             justify-content: space-between;
+                            }   
+                .projects {
                             position: relative;
                             margin-bottom: 4rem;
                         }
-                        .card {
+                .card {
                             width: 80vw;
                             height: 80vh;
                             position: relative;
                             padding: 1rem;
-                            margin-top: 2rem;
+                            margin-top: 5rem;
                             font-size: 1.2rem;
                             border-radius: 12px;
                             border: 2px solid rgba(27, 44, 104, 0.63);
@@ -32,27 +35,72 @@
                             font-weight: 50;
                             line-height: 1.5rem;
                         }
-                        #topline{
+                #topline{
                             width: 100vw !important;
                             height: 0.4vh !important;
                             margin-top: -99vh !important;
                             position: absolute !important;
                         }
                         
-                        .pointercircle1{
+                .pointercircle1{
                             margin-left: -55vw;
                             
                         }
-                        .pointercircle2{
+                .pointercircle2{
                             margin-left: -54vw;
                         }
-                        .pointercircle3{
+                .pointercircle3{
                             margin-left: -53vw;
                         }
 
-                        .myrole{
+                .myrole{
                             margin-left: -55vw;
                         }
+                #mypro{
+                            margin: 15vh 0 0 60vw !important;  
+                            position: static;
+                            width: 25vw;                         
+                            border-radius: 5px;color: whitesmoke;
+                            font-family: "Courier New", monospace;
+                            font-size: 1.29rem;
+                            line-height: 1.70rem;
+                            background-color: #2706ff;
+                            padding-left: 4vw;
+                        }
+                .contact_me{
+                            box-sizing: border-box;
+                            display: flex;
+                            flex-direction: column;
+                            color: azure;
+                            width: 100vw;
+                            height: 150vh;
+                            font-size: 1.8rem;
+                        }
+                #dmtome{
+                            margin: -8vh 2vw !important;
+                            padding: 1rem !important;  
+                            position: static;
+                            width: 30vw;                         
+                            border-radius: 5px;
+                            color: whitesmoke;
+                            font-family: "Courier New", monospace;
+                            font-size: 2rem;
+                            line-height: 1.70rem;
+                            background-color: #1a1443;
+                            padding-left: 2vw;
+                        }
+                .vlineforpro{
+                    margin-top: -4vh !important;
+                    position: static !important;
+                   
+                }
+                .contactline{
+                    display: none;
+                }
+                
+                
+                
+                        
 
                         
                        
@@ -344,7 +392,7 @@
         <div class="project" id="project">
             <h2 id="mypro">My Projects</h2>
             <div class="manycards">
-                <div style="height: 2px; width: 1245px; position: absolute; background: #7c3aed; margin: 85px 0 100px 235px;"></div>
+                <div class="vlineforpro" style="height: 2px; width: 1245px; position: absolute; background: #7c3aed; margin: 85px 0 100px 235px;"></div>
                 <div class="projects">
                     <div id="topline" style="height: 2px; width: 780px; position: absolute; background: linear-gradient(to right, transparent, #ec489ac8, #7c3aed,transparent); margin-top: -499px;"></div>
                     <div class="pointercircle1" style="height: 15px; width: 15px; background: rgba(208, 48, 4, 0.847); border-radius: 50%; position: absolute; margin-top: -440px; left: 400px; "></div>
@@ -370,11 +418,11 @@
                     <div style="height: 2px; width: 800px; position: absolute; background:#6e37cc88; margin-top: -370px;"></div>
                     <div class="card invoice" >
                         <span style="color:aquamarine;">Const</span> <span style="color: whitesmoke;">project</span> <span style="color: rgb(212, 55, 108); font-weight:bolder">=</span> <span style="color: rgb(80, 80, 255); font-weight: bolder;">{</span>
-                        <br><span style="color: white; left: 415px; position: absolute; padding-top: 15px;">my_Role:</span> <span style="color: rgba(255, 255, 0, 0.658);left: 505px; position: absolute; padding-top: 15px;">'Back-End Developer'<span style="color: whitesmoke;">,</span></span>
-                        <br><span style="color: white; left: 415px; position: absolute; padding-top: 30px;">tools_Technologies:</span> <span style="color: rgba(243, 80, 255, 0.76); font-weight: bolder;left: 620px; position: absolute; padding-top: 30px;">[</span>
-                        <span style="color: rgba(255, 255, 0, 0.658);left: 635px; position: absolute; padding-top: 30px;">'React.js','Java','Springboot','MySQL','CSS3',<br>'Hibernet','VS Code','Eclipse','Chrome','Gmail'</span><br><span style="color: rgba(243, 80, 255, 0.76); font-weight: bolder;left: 1140px; position: absolute; padding-top: 30px;">]<span style="color: whitesmoke;">,</span></span>
-                        <br><span style="color: white; left: 415px; position: absolute; padding-top: 35px;">summary:</span>
-                        <span style="color: rgba(255, 255, 0, 0.658);left: 505px; position: absolute; padding-top: 35px; width: 650px; line-height: 1.8rem;">I worked with my team to develop a full-stack billing system web application, primarily handling backend development using Spring Boot and MySQL for secure data management. My team managed the frontend, while I contributed minor enhancements using React.js and Material UI to improve the user experience. We integrated Redux for state management,React-Hook-Form for form handling, and various npm libraries like Axios, Formik for added functionality. Additionally, I developed an automated invoicing system to generate and send final invoices via email.</span><span style="color: rgb(80, 80, 255); font-weight: bolder; position: absolute; margin-top: 298px; margin-left: 600px; font-size: 20px; font-weight: 600;">}</span>
+                        <br><span class="myrole" style="color: white; left: 415px; position: absolute; padding-top: 15px;">my_Role:</span> <span style="color: rgba(255, 255, 0, 0.658);left: 505px; position: absolute; padding-top: 15px;"class="myrole">'Back-End Developer'<span style="color: whitesmoke;">,</span></span>
+                        <br><span class="myrole" style="color: white; left: 415px; position: absolute; padding-top: 30px;">tools_Technologies:</span> <span style="color: rgba(243, 80, 255, 0.76); font-weight: bolder;left: 620px; position: absolute; padding-top: 30px;">[</span>
+                        <span class="myrole" style="color: rgba(255, 255, 0, 0.658);left: 635px; position: absolute; padding-top: 30px;">'React.js','Java','Springboot','MySQL','CSS3',<br>'Hibernet','VS Code','Eclipse','Chrome','Gmail'</span><br><span style="color: rgba(243, 80, 255, 0.76); font-weight: bolder;left: 1140px; position: absolute; padding-top: 30px;">]<span style="color: whitesmoke;">,</span></span>
+                        <br><span class="myrole" style="color: white; left: 415px; position: absolute; padding-top: 35px;">summary:</span>
+                        <span class="myrole" style="color: rgba(255, 255, 0, 0.658);left: 505px; position: absolute; padding-top: 35px; width: 650px; line-height: 1.8rem;">I worked with my team to develop a full-stack billing system web application, primarily handling backend development using Spring Boot and MySQL for secure data management. My team managed the frontend, while I contributed minor enhancements using React.js and Material UI to improve the user experience. We integrated Redux for state management,React-Hook-Form for form handling, and various npm libraries like Axios, Formik for added functionality. Additionally, I developed an automated invoicing system to generate and send final invoices via email.</span><span style="color: rgb(80, 80, 255); font-weight: bolder; position: absolute; margin-top: 298px; margin-left: 600px; font-size: 20px; font-weight: 600;">}</span>
                     </div>
                 </div>
                 <div class="projects">
@@ -386,11 +434,11 @@
                     <div style="height: 2px; width: 800px; position: absolute; background:#6e37cc88; margin-top: -370px;"></div>
                     <div class="card">
                         <span style="color:aquamarine;">Const</span> <span style="color: whitesmoke;">project</span> <span style="color: rgb(212, 55, 108); font-weight:bolder">=</span> <span style="color: rgb(80, 80, 255); font-weight: bolder;">{</span>
-                        <br><span style="color: white; left: 415px; position: absolute; padding-top: 15px;">my_Role:</span> <span style="color: rgba(255, 255, 0, 0.658);left: 505px; position: absolute; padding-top: 15px;">'Full Stack Developer'<span style="color: whitesmoke;">,</span></span>
-                        <br><span style="color: white; left: 415px; position: absolute; padding-top: 30px;">tools_Technologies:</span> <span style="color: rgba(243, 80, 255, 0.76); font-weight: bolder;left: 620px; position: absolute; padding-top: 30px;">[</span>
-                        <span style="color: rgba(255, 255, 0, 0.658);left: 635px; position: absolute; padding-top: 30px;">'Java','Springboot','MySQL','Hibernet',<br>'React.js','Eclipse','VS Code','Chrome'</span><br><span style="color: rgba(243, 80, 255, 0.76); font-weight: bolder;left: 1055px; position: absolute; padding-top: 30px;">]<span style="color: whitesmoke;">,</span></span>
-                        <br><span style="color: white; left: 415px; position: absolute; padding-top: 35px;">summary:</span>
-                        <span style="color: rgba(255, 255, 0, 0.658);left: 505px; position: absolute; padding-top: 35px; width: 600px; line-height: 1.8rem;">I collaborated with my team to develop a full-stack E-Commerce Online Shopping Platform, using Spring Boot and MySQL for secure data management and React.js with Material UI for a responsive UI. Integrated Redux, React-Hook-Form, and npm libraries like Lodash, Axios, Formik, Moment.js, and React-Toastify for enhanced functionality. Implemented Razorpay payment gateway, secure authentication, product management, and an optimized checkout process.</span><span style="color: rgb(80, 80, 255); font-weight: bolder; position: absolute; margin-top: 270px;margin-left: 450px; font-weight: 600;">}</span>
+                        <br><span class="myrole" style="color: white; left: 415px; position: absolute; padding-top: 15px;">my_Role:</span> <span style="color: rgba(255, 255, 0, 0.658);left: 505px; position: absolute; padding-top: 15px;"class="myrole">'Full Stack Developer'<span style="color: whitesmoke;">,</span></span>
+                        <br><span class="myrole" style="color: white; left: 415px; position: absolute; padding-top: 30px;">tools_Technologies:</span> <span style="color: rgba(243, 80, 255, 0.76); font-weight: bolder;left: 620px; position: absolute; padding-top: 30px;">[</span>
+                        <span class="myrole" style="color: rgba(255, 255, 0, 0.658);left: 635px; position: absolute; padding-top: 30px;">'Java','Springboot','MySQL','Hibernet',<br>'React.js','Eclipse','VS Code','Chrome'</span><br><span style="color: rgba(243, 80, 255, 0.76); font-weight: bolder;left: 1055px; position: absolute; padding-top: 30px;">]<span style="color: whitesmoke;">,</span></span>
+                        <br><span class="myrole" style="color: white; left: 415px; position: absolute; padding-top: 35px;">summary:</span>
+                        <span class="myrole" style="color: rgba(255, 255, 0, 0.658);left: 505px; position: absolute; padding-top: 35px; width: 600px; line-height: 1.8rem;">I collaborated with my team to develop a full-stack E-Commerce Online Shopping Platform, using Spring Boot and MySQL for secure data management and React.js with Material UI for a responsive UI. Integrated Redux, React-Hook-Form, and npm libraries like Lodash, Axios, Formik, Moment.js, and React-Toastify for enhanced functionality. Implemented Razorpay payment gateway, secure authentication, product management, and an optimized checkout process.</span><span style="color: rgb(80, 80, 255); font-weight: bolder; position: absolute; margin-top: 270px;margin-left: 450px; font-weight: 600;">}</span>
                     </div>
                 </div>
                 <div class="projects">
@@ -402,11 +450,11 @@
                     <div style="height: 2px; width: 800px; position: absolute; background:#6e37cc88; margin-top: -370px;"></div>
                     <div class="card">
                         <span style="color:aquamarine;">Const</span> <span style="color: whitesmoke;">project</span> <span style="color: rgb(212, 55, 108); font-weight:bolder">=</span> <span style="color: rgb(80, 80, 255); font-weight: bolder;">{</span>
-                        <br><span style="color: white; left: 415px; position: absolute; padding-top: 15px;">my_Role:</span> <span style="color: rgba(255, 255, 0, 0.658);left: 505px; position: absolute; padding-top: 15px;">'Front-End Developer'<span style="color: whitesmoke;">,</span></span>
-                        <br><span style="color: white; left: 415px; position: absolute; padding-top: 30px;">tools_Technologies:</span> <span style="color: rgba(243, 80, 255, 0.76); font-weight: bolder;left: 620px; position: absolute; padding-top: 30px;">[</span>
-                        <span style="color: rgba(255, 255, 0, 0.658);left: 635px; position: absolute; padding-top: 30px;">'HTML5','CSS3','JavaScript',<br>'VS Code','Chrome','Material UI','Figma'</span><br><span style="color: rgba(243, 80, 255, 0.76); font-weight: bolder;left: 1070px; position: absolute; padding-top: 30px;">]<span style="color: whitesmoke;">,</span></span>
-                        <br><span style="color: white; left: 415px; position: absolute; padding-top: 35px;">summary:</span>
-                        <span style="color: rgba(255, 255, 0, 0.658);left: 505px; position: absolute; padding-top: 35px; width: 600px; line-height: 1.8rem;">I designed and developed a static website for Unity Construction and Formulation using HTML5, CSS3, and JavaScript, ensuring a responsive and visually appealing user experience. The website features a clean layout, smooth navigation, and optimized performance. Additionally, I implemented interactive UI elements and animations to enhance user engagement.</span><span style="color: rgb(80, 80, 255); font-weight: bolder; position: absolute; margin-top: 210px;margin-left: 550px; font-size: 20px; font-weight: 600;">}</span>
+                        <br><span class="myrole" style="color: white; left: 415px; position: absolute; padding-top: 15px;">my_Role:</span> <span class="myrole" style="color: rgba(255, 255, 0, 0.658);left: 505px; position: absolute; padding-top: 15px;">'Front-End Developer'<span style="color: whitesmoke;">,</span></span>
+                        <br><span class="myrole" style="color: white; left: 415px; position: absolute; padding-top: 30px;">tools_Technologies:</span> <span class="myrole" style="color: rgba(243, 80, 255, 0.76); font-weight: bolder;left: 620px; position: absolute; padding-top: 30px;">[</span>
+                        <span class="myrole" style="color: rgba(255, 255, 0, 0.658);left: 635px; position: absolute; padding-top: 30px;">'HTML5','CSS3','JavaScript',<br>'VS Code','Chrome','Material UI','Figma'</span><br><span style="color: rgba(243, 80, 255, 0.76); font-weight: bolder;left: 1070px; position: absolute; padding-top: 30px;">]<span style="color: whitesmoke;">,</span></span>
+                        <br><span class="myrole" style="color: white; left: 415px; position: absolute; padding-top: 35px;">summary:</span>
+                        <span class="myrole" style="color: rgba(255, 255, 0, 0.658);left: 505px; position: absolute; padding-top: 35px; width: 600px; line-height: 1.8rem;">I designed and developed a static website for Unity Construction and Formulation using HTML5, CSS3, and JavaScript, ensuring a responsive and visually appealing user experience. The website features a clean layout, smooth navigation, and optimized performance. Additionally, I implemented interactive UI elements and animations to enhance user engagement.</span><span style="color: rgb(80, 80, 255); font-weight: bolder; position: absolute; margin-top: 210px;margin-left: 550px; font-size: 20px; font-weight: 600;">}</span>
                     </div>
                 </div>
                 <div class="projects invoice">
@@ -418,20 +466,20 @@
                     <div style="height: 2px; width: 800px; position: absolute; background:#6e37cc88; margin-top: -370px;"></div>
                     <div class="card">
                         <span style="color:aquamarine;">Const</span> <span style="color: whitesmoke;">project</span> <span style="color: rgb(212, 55, 108); font-weight:bolder">=</span> <span style="color: rgb(80, 80, 255); font-weight: bolder;">{</span>
-                        <br><span style="color: white; left: 415px; position: absolute; padding-top: 15px;">my_Role:</span> <span style="color: rgba(255, 255, 0, 0.658);left: 505px; position: absolute; padding-top: 15px;">'Full Stack Developer'<span style="color: whitesmoke;">,</span></span>
-                        <br><span style="color: white; left: 415px; position: absolute; padding-top: 30px;">tools_Technologies:</span> <span style="color: rgba(243, 80, 255, 0.76); font-weight: bolder;left: 620px; position: absolute; padding-top: 30px;">[</span>
-                        <span style="color: rgba(255, 255, 0, 0.658);left: 635px; position: absolute; padding-top: 30px;">'Java','Springboot','MangoDB','Figma',<br>'React.js','Eclipse','Chrome'</span><br><span style="color: rgba(243, 80, 255, 0.76); font-weight: bolder;left: 1125px; position: absolute; padding-top: 30px;">]<span style="color: whitesmoke;">,</span></span>
-                        <br><span style="color: white; left: 415px; position: absolute; padding-top: 35px;">summary:</span>
-                        <span style="color: rgba(255, 255, 0, 0.658);left: 505px; position: absolute; padding-top: 35px; width: 650px; line-height: 1.8rem;">I developed a full-stack Internship Management Platform, leading both frontend and backend development using Spring Boot and MongoDB. On the frontend, I created a responsive UI with React.js, Material UI, and Figma to ensure a seamless user experience. I integrated Redux for state management, React-Hook-Form for form handling, and added functionality using npm libraries like Lodash, Axios, and React-Toastify, while also implementing secure authentication and role-based access for efficient internship management.</span><span style="color: rgb(80, 80, 255); font-weight: bolder; position: absolute; margin-top: 270px;margin-left: 580px; font-size: 20px; font-weight: 600;">}</span>
+                        <br><span class="myrole" style="color: white; left: 415px; position: absolute; padding-top: 15px;">my_Role:</span> <span class="myrole" style="color: rgba(255, 255, 0, 0.658);left: 505px; position: absolute; padding-top: 15px;">'Full Stack Developer'<span style="color: whitesmoke;">,</span></span>
+                        <br><span class="myrole" style="color: white; left: 415px; position: absolute; padding-top: 30px;">tools_Technologies:</span> <span class="myrole" style="color: rgba(243, 80, 255, 0.76); font-weight: bolder;left: 620px; position: absolute; padding-top: 30px;">[</span>
+                        <span class="myrole" style="color: rgba(255, 255, 0, 0.658);left: 635px; position: absolute; padding-top: 30px;">'Java','Springboot','MangoDB','Figma',<br>'React.js','Eclipse','Chrome'</span><br><span style="color: rgba(243, 80, 255, 0.76); font-weight: bolder;left: 1125px; position: absolute; padding-top: 30px;">]<span style="color: whitesmoke;">,</span></span>
+                        <br><span class="myrole" style="color: white; left: 415px; position: absolute; padding-top: 35px;">summary:</span>
+                        <span class="myrole" style="color: rgba(255, 255, 0, 0.658);left: 505px; position: absolute; padding-top: 35px; width: 650px; line-height: 1.8rem;">I developed a full-stack Internship Management Platform, leading both frontend and backend development using Spring Boot and MongoDB. On the frontend, I created a responsive UI with React.js, Material UI, and Figma to ensure a seamless user experience. I integrated Redux for state management, React-Hook-Form for form handling, and added functionality using npm libraries like Lodash, Axios, and React-Toastify, while also implementing secure authentication and role-based access for efficient internship management.</span><span style="color: rgb(80, 80, 255); font-weight: bolder; position: absolute; margin-top: 270px;margin-left: 580px; font-size: 20px; font-weight: 600;">}</span>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="contact_me" id="contact_me">
-            <h3 style="margin: 50px 0 0 100px; background: #260166cd; height: 60px; border-radius: 6px; padding: 10px;" >Contact</h3><div style="height: 2px; width: 1250px; position: absolute; background: #7c3aed; margin: 85px 0 100px 235px;"></div>
+            <h3 id="dmtome" style="margin: 50px 0 0 100px; background: #260166cd; height: 60px; border-radius: 6px; padding: 10px;" >Contact</h3><div class="contactline" style="height: 2px; width: 1250px; position: absolute; background: #7c3aed; margin: 85px 0 100px 235px;"></div>
             <div class="connectwithme">
-                <h3 style="margin: 20px 0 30px 80px;">Connect With Me</h3>
+                <h3 id="cwm" style="margin: 20px 0 30px 80px;">Connect With Me</h3>
                 <form action="https://api.web3forms.com/submit" method="POST">
                     <input type="hidden" name="access_key" value="0865e295-9818-45a0-ae6f-909b41db4003">
                     <label for="sname">Your Full Name:</label>

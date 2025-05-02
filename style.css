@@ -950,6 +950,110 @@ label{
         aspect-ratio: 1;
         color:#a4a4a4;
     }
+    .skills{
+        display: flex;
+        height: 202vh;
+        width: 100vw;
+        background-color: #d3d3d3;
+        color: #000;
+        gap: 0.4rem;
+        flex-direction: column;
+        padding: 5rem 10rem 5rem 15vw;
+    }
+
+    .skills #myskills{
+        margin: -14vh 0 0 15vw;
+        -webkit-text-stroke: 1px #946868; /* Border thickness and color */
+        font-size: 2.8rem; /* Adjust size as needed */
+        font-weight: bold;
+        border: 0.2rem solid black;
+        width: 40vw;
+        padding: 0.3vh 5vw;
+        
+    }
+
+    .usinginbox{
+        display: grid;
+        grid-template-columns: repeat(3, 1.5fr);
+        grid-template-rows: repeat(auto,1fr);
+        row-gap: 9vh;
+        column-gap: 5vw;
+        margin-left: -5vw;
+    }
+    .ringouter{
+        height: 8rem;
+        width: 8rem;
+        border-radius: 50%;
+        padding: 1.25rem;
+        box-shadow: 0.3rem 0.3rem 0.7rem 0.1rem rgba(0,0,0,0.15),
+                    -0.3rem -0.3rem 0.7rem -0.1rem rgba(255,255,255,0.7);
+    }
+    
+    .ringinner{
+        height: 5.75rem;
+        width: 5.75rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow:  inset 0.25rem 0.25rem 0.5rem -0.125rem  rgba(0,0,0,0.2),
+                     inset -0.25rem -0.25rem 0.5rem -0.125rem  rgba(255,255,255,0.7),
+                     -0.5px -0.5px 0px rgba(255,255,255,1),
+                     0px 0.75rem 0.625rem -0.625rem rgba(0,0,0,0.05);
+    }
+    
+    .ringinner img{
+        height: 4.8rem;
+        width: 4.8rem;
+        position: relative;
+        border-radius: 50%;
+    }
+
+    .manycards {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+   }   
+   .projects {
+       position: relative;
+       margin-bottom: 4rem;
+   }
+   .card {
+       width: 80vw;
+       height: 80vh;
+       position: relative;
+       padding: 1rem;
+       margin-top: 2rem;
+       font-size: 1.2rem;
+       border-radius: 12px;
+       border: 2px solid rgba(27, 44, 104, 0.63);
+       background: linear-gradient(to right, #0d1224, #0a0d37);
+       font-family: 'Courier New', Courier, monospace;
+       font-weight: 50;
+       line-height: 1.5rem;
+   }
+   #topline{
+       width: 100vw !important;
+       height: 0.4vh !important;
+       margin-top: -99vh !important;
+       position: absolute !important;
+   }
+   
+   .pointercircle1{
+       margin-left: -55vw;
+       
+   }
+   .pointercircle2{
+       margin-left: -54vw;
+   }
+   .pointercircle3{
+       margin-left: -53vw;
+   }
+
+   .myrole{
+       margin-left: -55vw;
+   }
 
 
 
@@ -1259,6 +1363,29 @@ label{
         background-color: #1a1443;
     }
     
+    .contact_me{
+        box-sizing: border-box;
+        display: flex;
+        color: azure;
+        width: 100vw;
+        height: 100vh;
+        font-size: 1.8rem;
+
+    }
+
+    .footer{
+        width: 100%;
+        min-height: 50px;
+        background: linear-gradient(to right, #ff2faf 0%, #2d24dd61  51%, #d92fff  100%);
+        display: flex;
+        justify-content: center;
+        color: whitesmoke;
+        padding-top: 15px;
+        padding-left: 450px;
+    }
+
+    
+    
 
 
     
@@ -1285,6 +1412,90 @@ label{
     .nav-list {
         gap: 0.5rem; /* Minimal gap */
         font-size: 0.8rem; /* Smallest font size */
+    }
+    html, body {
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden; /* Prevents horizontal scrolling */
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        width: 100%;  /* Ensures full width of the viewport */
+        max-width: 100%; /* Prevents exceeding screen width */
+        overflow: hidden; /* Hides any extra content */
+    }
+    .nav-list {
+        width: 100%;
+        position: fixed; 
+        top: 4rem;
+        left: 0;
+        right: 0;
+        height: auto;
+        overflow: hidden;
+        max-height: 0px;
+        transition: max-height 0.5s ease-in-out;
+        flex-direction: column;
+        background: #0c1f5ca7;
+        backdrop-filter: blur(5px);
+        text-align: center;
+        display: flex;
+        z-index: 1001;  
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 800;
+        
+    }
+    .nav-list li{
+        padding: 1rem;
+        margin: 0 0.5rem;
+        border: 0.1rem solid;
+        border-image: linear-gradient(to right, #ff2faf, #2d24dd61, #f1ff2fbb) 1;
+        
+    }
+    
+   .nav-list.open {
+               height: 500px; /* enough space for 5 items */
+    }
+    .mobilenav {
+        display: block;
+        color: #fff;
+        font-size: 2rem;
+        margin: 1.2vh 1.2vw;
+        right: 1%;
+        position: fixed; 
+        top: 1rem;
+        cursor: pointer;
+        z-index: 1002;
+    }
+    .myphoto{
+        display: none;
+    }
+    .leftside{
+        background-color: #0D1224;
+        color: white;
+        width: 100vw;
+        height: 100vh;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        animation: flowright 2s ease;
+        font-size: 20px;
+        padding: 0 5.2vw;
+        line-height: 6vh;
+        margin-left: 3vw;
+        
+    }
+
+    .leftside p{
+        font-size: 16px;
+        width: fit-content;
+        line-height: 5.5vh;
+        margin-top: 2vh;
+    
+    }
+    .logo{
+        margin: 2vh 0 5vh 0;
+        
     }
 
     .about{
@@ -1362,5 +1573,143 @@ label{
         aspect-ratio: 1;
         color:#a4a4a4;
         margin-left: -1vw;
+    }
+
+    .usinginbox{
+        display: grid;
+        grid-template-columns: repeat(3, 1.5fr);
+        grid-template-rows: repeat(auto,1fr);
+        row-gap: 9vh;
+        column-gap: 5vw;
+        margin-left: -5vw;
+    }
+    .ringouter{
+        height: 8rem;
+        width: 8rem;
+        border-radius: 50%;
+        padding: 1.25rem;
+        box-shadow: 0.3rem 0.3rem 0.7rem 0.1rem rgba(0,0,0,0.15),
+                    -0.3rem -0.3rem 0.7rem -0.1rem rgba(255,255,255,0.7);
+    }
+    
+    .ringinner{
+        height: 5.75rem;
+        width: 5.75rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow:  inset 0.25rem 0.25rem 0.5rem -0.125rem  rgba(0,0,0,0.2),
+                     inset -0.25rem -0.25rem 0.5rem -0.125rem  rgba(255,255,255,0.7),
+                     -0.5px -0.5px 0px rgba(255,255,255,1),
+                     0px 0.75rem 0.625rem -0.625rem rgba(0,0,0,0.05);
+    }
+    
+    .ringinner img{
+        height: 4.8rem;
+        width: 4.8rem;
+        position: relative;
+        border-radius: 50%;
+    }
+    
+    
+    circle{
+        opacity: 0;
+    
+    }
+
+    svg:nth-of-type(1) {
+       display: none;
+    }
+    svg:nth-of-type(2) {
+        display: none;
+    }
+
+    svg:nth-of-type(3) {
+        display: none;
+    }
+    svg:nth-of-type(4) {
+        display: none;
+    }
+
+    svg:nth-of-type(5) {
+        display: none;
+    }
+
+    svg:nth-of-type(6) {
+        display: none;
+    }
+
+
+
+
+    #US{
+        margin-left: -2vw;
+        font-size: 24px;
+        font-style: italic;
+    }
+
+    #ps{
+        height: 80px;
+        border-radius: 20px;
+    }
+    #LN{
+        font-size: 24px;
+        margin: -77vh -10vw;
+        position: relative;
+        top: 5vh;
+        font-style: italic;
+    }
+    
+    #TW{
+        height: 40px;
+        border-radius: 0;
+    }
+    #post{
+        height: 70px;
+        border-radius: 0;
+    }
+    .projects{
+        min-width: 100vw;
+        min-height: 100vh;
+        background-color: #0D1224;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: -10px;
+    }
+    
+    #mypro{
+        position: absolute;
+        padding: 10px;
+        border-radius: 5px;
+        top: 406vh;
+        left: 4.5vw;
+        color: whitesmoke;
+        font-family: "Courier New", monospace;
+        font-size: 1.29rem;
+        line-height: 1.70rem;
+        background-color: #1a1443;
+    }
+    
+    .contact_me{
+        box-sizing: border-box;
+        display: flex;
+        color: azure;
+        width: 100vw;
+        height: 100vh;
+        font-size: 1.8rem;
+
+    }
+
+    .footer{
+        width: 100%;
+        min-height: 50px;
+        background: linear-gradient(to right, #ff2faf 0%, #2d24dd61  51%, #d92fff  100%);
+        display: flex;
+        justify-content: center;
+        color: whitesmoke;
+        padding-top: 15px;
+        padding-left: 450px;
     }
 }
