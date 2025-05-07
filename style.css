@@ -1707,7 +1707,7 @@ label{
 
     }
     #dmtome{
-        margin: 1vh !important;
+        margin: 5vh !important;
         width: 50vw !important;
     }
     .connectwithme{
@@ -1731,7 +1731,7 @@ label{
         justify-content: space-between;
         color: whitesmoke;
         padding-top: 15px;
-        padding-left: 100px;
+        padding-left: 10vw;
         margin-top: 20vh;
     }
     .myinfoforconnect{
