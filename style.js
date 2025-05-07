@@ -24,3 +24,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // Observe each selected element
   animatedDivs.forEach((div) => observer.observe(div));
 });
+
+
+
+
+
