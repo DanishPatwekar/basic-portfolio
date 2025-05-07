@@ -1731,7 +1731,7 @@ label{
         justify-content: space-between;
         color: whitesmoke;
         padding-top: 15px;
-        padding-left: 10vw;
+        padding-left: -10vw;
         margin-top: 20vh;
     }
     .myinfoforconnect{
