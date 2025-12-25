@@ -7,7 +7,7 @@ const Particals = () => {
         const ctx=canvas.getContext("2d");
         let partical=[];
         const particalvalue=50;
-        let particalColor=["rgba(255,255,255,0.7)","rgba(246, 156, 156, 0.8)","rgba(55, 115, 0, 0.72)"];
+        let particalColor=["rgba(255,255,255,0.7)"];
         class Particals{
             constructor(){
                 this.x=Math.random()*canvas.width;
