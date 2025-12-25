@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@layer utilities {
+   .gradient{
+    background: linear-gradient(-45deg, #302b63, #00bf8f, #1cd8d2);
+   }
+}
+@theme{
+    --font-Tangerine:"Tangerine","sans-serif";
+}
+
